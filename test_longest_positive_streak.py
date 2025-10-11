@@ -1,4 +1,4 @@
-from streak import longest_positive_streak
+from longest_positive_streak import longest_positive_streak
 
 def test_empty():
     assert longest_positive_streak([]) == 0
