@@ -1,0 +1,6 @@
+INFO:root:Received task from 127.0.0.1: Write and run a program that prints the greatest common divisor of 495 and 340.
+INFO:root:Agent output: [WinError 2] The system cannot find the file specified
+INFO:root:Received task from 127.0.0.1: Write and run a program that prints the greatest common divisor of 495 and 340.
+INFO:root:Agent output: [WinError 2] The system cannot find the file specified
+INFO:root:Received task from 127.0.0.1: Write and run a program that prints the greatest common divisor of 495 and 340.
+INFO:root:Agent output: 5
