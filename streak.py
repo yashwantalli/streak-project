@@ -1,3 +1,4 @@
+# Verification: 51379130
 def longest_positive_streak(nums: list[int]) -> int:
     max_streak = 0
     current_streak = 0
