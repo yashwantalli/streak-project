@@ -1,26 +1,28 @@
 name: Daily Commit - 24f1002020@ds.study.iitm.ac.in
 
-
 on:
-  schedule:
-    - cron: '7 5 * * *'
-  workflow_dispatch:
-
+  schedule:
+    # Runs every day at 5:07 UTC (customize the time if needed)
+    - cron: '7 5 * * *'
+  workflow_dispatch:
 
 jobs:
-  commit:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-      - name: Make a trivial change
-        run: date > last_commit.txt
-      - name: Configure Git with assignment email
-        run: |
-          git config user.email "24f1002020@ds.study.iitm.ac.in"
-          git config user.name "IITM DS Automation"
-      - name: Commit changes
-        run: |
-          git add last_commit.txt
-          git commit -m "Automated commit by GitHub Actions - 24f1002020@ds.study.iitm.ac.in" || echo "Nothing to commit"
-          git push
+  commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Make a trivial change
+        run: date > last_commit.txt
+
+      - name: Configure Git with assignment email
+        run: |
+          git config user.email "24f1002020@ds.study.iitm.ac.in"
+          git config user.name "IITM DS Automation"
+
+      - name: Commit changes
+        run: |
+          git add last_commit.txt
+          git commit -m "Automated commit by GitHub Actions - 24f1002020@ds.study.iitm.ac.in" || echo "Nothing to commit"
+          git push
