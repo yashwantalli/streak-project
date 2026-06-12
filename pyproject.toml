@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "longest_positive_streak"
+version = "0.0.1"
+authors = [
+  { name="Jules", email="jules@example.com" },
+]
+description = "A function to find the longest streak of positive numbers"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+py_modules = ["longest_positive_streak"]
+
+[project.urls]
+"Homepage" = "https://github.com/example/longest_positive_streak"
+"Bug Tracker" = "https://github.com/example/longest_positive_streak/issues"
